@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const username = document.getElementById('username');
+const Pnumber = document.getElementById('Pnumber');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
@@ -34,15 +34,15 @@ const isValidEmail = email => {
 }
 
 const validateInputs = () => {
-    const usernameValue = username.value.trim();
+    const PnumberValue = Pnumber.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
-    if(usernameValue.length === 10  ) {
-        setSuccess(username);
+    if(PnumberValue.length === 10  ) {
+        setSuccess(Pnumber);
     } else {
-        setError(username, 'Phone is invalid');
+        setError(Pnumber, 'Phone is invalid');
     }
 
     if(emailValue === '') {
